@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Basic.master.cs" Inherits="V1_MasterPages_Basic" %>
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96039646-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-96039646-1');
+	</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<asp:ContentPlaceHolder id="head" runat="server">
+		</asp:ContentPlaceHolder>
+		<title>CrowdRelief Register</title>
+
+		<link href="/inspinia_v2.7.1/Static_Full_Version/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/inspinia_v2.7.1/Static_Full_Version/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="/inspinia_v2.7.1/Static_Full_Version/css/plugins/iCheck/custom.css" rel="stylesheet">
+		<link href="/inspinia_v2.7.1/Static_Full_Version/css/animate.css" rel="stylesheet">
+		<link href="/inspinia_v2.7.1/Static_Full_Version/css/style.css" rel="stylesheet">
+
+
+
+
+
+		
+		<!-- Mainly scripts -->
+		<script src="/inspinia_v2.7.1/Static_Full_Version/js/jquery-3.1.1.min.js"></script>
+		<script src="/inspinia_v2.7.1/Static_Full_Version/js/bootstrap.min.js"></script>
+
+		<script>
+
+			$(document).ready(function () {
+				$(".logo-name").click(function () {
+					document.location.href = "/Web/Index.html";
+				});
+			});
+		</script>
+
+		<style>
+			.logo-name
+			{
+				cursor: pointer;
+			}
+		</style>
+
+	</head>
+
+	<body class="white-bg">
+		<form id="form1" runat="server">
+			<div>
+				<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+				</asp:ContentPlaceHolder>
+			</div>
+		</form>
+
+	</body>
+</html>
